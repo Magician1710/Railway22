@@ -3,7 +3,7 @@ CREATE DATABASE Testing_System_Assignment_1;
 USE Testing_System_Assignment_1;
 
 CREATE TABLE Department
-		(DepartmentID 			INT AUTO_INCREMENT PRIMARY KEY,
+		(DepartmentID 				INT AUTO_INCREMENT PRIMARY KEY,
 		DepartmentName 				VARCHAR(100)
 		);
 
@@ -13,7 +13,7 @@ INSERT INTO Department(DepartmentName)
 VALUES ("marketing");
 
 CREATE TABLE Positions
-			(PositionId 	INT AUTO_INCREMENT PRIMARY KEY,
+			(PositionId 		INT AUTO_INCREMENT PRIMARY KEY,
             PositionsName		VARCHAR(100)
 			);
             
@@ -27,7 +27,7 @@ INSERT INTO Positions(PositionsName)
 VALUES ("PM");           
 
 CREATE TABLE Account
-(AcountID 	INT AUTO_INCREMENT PRIMARY KEY,
+(AcountID 		INT AUTO_INCREMENT PRIMARY KEY,
 Email 			VARCHAR(100),		
 Usename 		VARCHAR(100),
 Fullname		VARCHAR(100),
@@ -79,29 +79,29 @@ INSERT INTO CategoryQuestion(CategoryName)
 VALUES ("...");
 
 CREATE TABLE Question
-(QuestionID INT AUTO_INCREMENT PRIMARY KEY,
-Content		VARCHAR(100),
-CategoryID	VARCHAR(100),
-TypeID		VARCHAR(100),
-CreatorID	VARCHAR(100),
-CreateDate	VARCHAR(100)
+(QuestionID 	INT AUTO_INCREMENT PRIMARY KEY,
+Content			VARCHAR(100),
+CategoryID		VARCHAR(100),
+TypeID			VARCHAR(100),
+CreatorID		VARCHAR(100),
+CreateDate		VARCHAR(100)
 );
 
 CREATE TABLE Answer
-(AnswerID	INT AUTO_INCREMENT PRIMARY KEY,
-Content		VARCHAR(100),
-QuestionID	VARCHAR(100),
-isCorrect	VARCHAR(100)
+(AnswerID		INT AUTO_INCREMENT PRIMARY KEY,
+Content			VARCHAR(100),
+QuestionID		VARCHAR(100),
+isCorrect		VARCHAR(100)
 );
 
 CREATE TABLE Exam
-(ExamID 	INT AUTO_INCREMENT PRIMARY KEY,
-Code1		VARCHAR(100),
-Title		VARCHAR(100),
-CategoryID	VARCHAR(100),
-Duration	VARCHAR(100),
-CreatorID	VARCHAR(100),
-CreateDate	VARCHAR(100)
+(ExamID 		INT AUTO_INCREMENT PRIMARY KEY,
+Code1			VARCHAR(100),
+Title			VARCHAR(100),
+CategoryID		VARCHAR(100),
+Duration		VARCHAR(100),
+CreatorID		VARCHAR(100),
+CreateDate		VARCHAR(100)
 );
 
 CREATE TABLE 	ExamQuestion
