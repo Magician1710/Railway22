@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS testing_system;
-USE testing_system;
+CREATE DATABASE IF NOT EXISTS testing_system_assignment_1;
+USE testing_system_assignment_1;
 
 DROP TABLE IF EXISTS 
 departments,
@@ -26,7 +26,7 @@ CREATE TABLE positions
 	position_name		ENUM("Dev","Test","Scrum Master","PM") DEFAULT "Dev"
 );
 
-CREATE TABLE `accounts`
+CREATE TABLE accounts
 (account_id			INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 email				VARCHAR(100) UNICODE NOT NULL,
 username			VARCHAR(100) UNICODE NOT NULL,
@@ -52,13 +52,12 @@ CREATE TABLE group_accounts
 account_id		INT UNSIGNED,
 join_date		DATE,
 PRIMARY KEY(group_id,account_id),
-FOREIGN KEY (group_id) REFERENCES `groups`(group_id),
-FOREIGN KEY (account_id) REFERENCES accounts(account_id)
+FOREIGN KEY (group_id) REFERENCES `groups`(group_id)
 );
 
 CREATE TABLE type_questions
 (type_id		TINYINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-type_name		ENUM("essay","multiple_choice") DEFAULT "multiple=choice"
+type_name		ENUM("essay","multiple_choice") DEFAULT "multiple_choice"
 );
 
 CREATE TABLE category_questions
@@ -103,6 +102,6 @@ CREATE TABLE 	exam_questions
 question_id			INT UNSIGNED,
 PRIMARY KEY(exam_id,question_id),
 FOREIGN KEY (exam_id) REFERENCES exams(exam_id),
-FOREIGN KEY (question_id) REFERENCES exams(exams)
+FOREIGN KEY (question_id) REFERENCES questions(question_id)
 );
 
