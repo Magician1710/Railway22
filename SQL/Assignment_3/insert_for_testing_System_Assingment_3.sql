@@ -22,7 +22,7 @@ VALUES 				('haidang29productions@gmail.com'	, 'dangblack'		,'Nguyễn hải Đ�
 					('account1@gmail.com'				, 'quanganh'		,'Nguyen Chien Thang2'	,   '1'			,   '2'		,'2020-03-05'),
                     ('account2@gmail.com'				, 'vanchien'		,'Nguyen Van Chien'		,   '2'			,   '3'		,'2020-03-07'),
                     ('account3@gmail.com'				, 'cocoduongqua'	,'Duong Do'				,   '5'			,   '4'		,'2020-03-08'),
-                    ('account4@gmail.com'				, 'doccocaubai'		,'Nguyen Chien Thang1'	,   '4'			,   '4'		,'2020-03-10'),
+                    ('account4@gmail.com'				, 'doccocaubai'		,'Nguyen Chien Thang1'	,   '3'			,   '4'		,'2020-03-10'),
                     ('dapphatchetngay@gmail.com'		, 'khabanh'			,'Ngo Ba Kha'			,   '6'			,   '3'		,'2020-04-05'),
                     ('songcodaoly@gmail.com'			, 'huanhoahong'		,'Bui Xuan Huan'		,   '7'			,   '2'		, NULL		),
                     ('sontungmtp@gmail.com'				, 'tungnui'			,'Nguyen Thanh Tung'	,   '8'			,   '1'		,'2020-04-07'),
