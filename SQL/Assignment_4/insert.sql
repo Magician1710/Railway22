@@ -71,7 +71,7 @@ VALUES 								('Java'			),
 
 
 INSERT INTO questions	(content			, category_id, type_id		, creator_id	, create_date )
-VALUES 					(N'Câu hỏi về Java Câu hỏi về Java Câu hỏi về Java Câu hỏi về Java'	,	1		,   '1'			,   '2'		,'2020-04-05'),
+VALUES 					(N'Câu hỏi về Java'	,	1		,   '1'			,   '2'		,'2020-04-05'),
 						(N'Câu Hỏi về PHP'	,	10		,   '2'			,   '2'		,'2020-04-05'),
 						(N'Hỏi về C#'		,	9		,   '2'			,   '3'		,'2020-04-06'),
 						(N'Hỏi về Ruby'		,	6		,   '1'			,   '4'		,'2020-04-06'),
