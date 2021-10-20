@@ -71,7 +71,7 @@ VALUES 								('Java'			),
 
 
 INSERT INTO questions	(content			, category_id, type_id		, creator_id	, create_date )
-VALUES 					(N'Câu hỏi về Java'	,	1		,   '1'			,   '2'		,'2020-04-05'),
+VALUES 					(N'Câu hỏi về Java Câu hỏi về Java Câu hỏi về Java Câu hỏi về Java'	,	1		,   '1'			,   '2'		,'2020-04-05'),
 						(N'Câu Hỏi về PHP'	,	10		,   '2'			,   '2'		,'2020-04-05'),
 						(N'Hỏi về C#'		,	9		,   '2'			,   '3'		,'2020-04-06'),
 						(N'Hỏi về Ruby'		,	6		,   '1'			,   '4'		,'2020-04-06'),
@@ -95,7 +95,7 @@ VALUES 				(N'Trả lời 01'	,   1			,	0		),
                     (N'Trả lời 09'	,   9			,	1		),
                     (N'Trả lời 10'	,   10			,	1		);
 
-INSERT INTO exams	(`code`			, title					, category_id	, duration	, creator_id		, createdate )
+INSERT INTO exams	(`code`			, title					, category_id	, duration	, creator_id		, create_date )
 VALUES 				('VTIQ001'		, N'Đề thi C#'			,	1			,	60		,   '5'			,'2019-04-05'),
 					('VTIQ002'		, N'Đề thi PHP'			,	10			,	60		,   '2'			,'2019-04-05'),
                     ('VTIQ003'		, N'Đề thi C++'			,	9			,	120		,   '2'			,'2019-04-07'),
