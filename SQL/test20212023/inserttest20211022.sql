@@ -1,4 +1,4 @@
-INSERT INTO		CUSTOMER 	(`Name`,			Phone,			Email,						Address,		Note)
+INSERT INTO		CUSTOMER 	(`Name`,			Phone,				Email,						Address,		Note)
 VALUES						("shibata",			"07011112222",		"shibata@gmail",		"JPN,tokyo",	"loeloet"),
 							("kaneko",			"07047474747",		"kaneko@gmail",			"JPN,osaka",	"dongian"),
                             ("itou",			"07039393939",		"itou@icloud", 			"JPN,tochigi",	"lichlam"),
@@ -12,8 +12,8 @@ VALUES						("ToYOTA","toyota86","1998/10/10","black","sangxinmin"),
                             ("NISSAN","NISSANLEAF","2015/01/01","white_black","xedien"),
                             ("TOYOTA","TOYOTAPRIUS","2021/09/27","blackedition","xelaidien");
 INSERT	INTO	`ORDER`		(CustumerID,	CarID,	Amount,		SalePrice,	OrderDate,		DeliveryDate,	DeliveryAddress,	`Status`,	Note)
-VALUES						("1",			"1",	"4000000",	"3950000",	"2021/10/10",	"2021/10/30",	"JPN,tokyo",		"dagiao",	"xechayngon"),
-							("4",			"2",	"2500000",	"2300000",	"2021/10/09",	"2021/10/31",	"JPN,fukuoka",		"dagiao",	"tamchapnhan"),
-                            ("2",			"3",	"5000000",	"4600000",	"2021/1/10",	"2021/2/28",	"JPN,osaka",		"dagiao",	"perfect"),
-                            ("5",			"4",	"3200000",	"3000000",	"2021/1/1",		"2021/1/1",				"JPN,iwate",		"dahuy",	"xebiloi"),
-                            ("3",			"3",		"2950000",	"2840000",	"2021/5/5",		"2021/2/2",				"JPN,tochigi",		"dahuy",			"chogiaoxe");
+VALUES						("1",			"1",	"2",	"3950000",	"2021/10/10",	"2021/10/30",	"JPN,tokyo",		"dagiao",	"xechayngon"),
+							("4",			"2",	"1",	"2300000",	"2021/10/09",	"2021/10/31",	"JPN,tokyo",		"dagiao",	"tamchapnhan"),
+                            ("1",			"3",	"3",	"4600000",	"2021/1/10",	"2021/2/28",	"JPN,osaka",		"dagiao",	"perfect"),
+                            ("5",			"4",	"1",	"3000000",	"2021/1/1",		"2021/1/1",				"JPN,iwate",		"dahuy",	"xebiloi"),
+                            ("3",			"3",		"1",	"2840000",	"2021/5/5",		"2021/2/2",				"JPN,tochigi",		"dahuy",			"chogiaoxe");
