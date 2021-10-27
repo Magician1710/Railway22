@@ -15,5 +15,5 @@ INSERT	INTO	`ORDER`		(CustumerID,	CarID,	Amount,		SalePrice,	OrderDate,		Deliver
 VALUES						("1",			"1",	"2",	"3950000",	"2021/10/10",	"2021/10/30",	"JPN,tokyo",		"dagiao",	"xechayngon"),
 							("4",			"2",	"1",	"2300000",	"2021/10/09",	"2021/10/31",	"JPN,tokyo",		"dagiao",	"tamchapnhan"),
                             ("1",			"3",	"3",	"4600000",	"2021/1/10",	"2021/2/28",	"JPN,osaka",		"dagiao",	"perfect"),
-                            ("5",			"4",	"1",	"3000000",	"2021/1/1",		"2021/1/1",				"JPN,iwate",		"dahuy",	"xebiloi"),
-                            ("3",			"3",		"1",	"2840000",	"2021/5/5",		"2021/2/2",				"JPN,tochigi",		"dahuy",			"chogiaoxe");
+                            ("5",			"4",	"1",	"3000000",	"2021/1/1",		NULL,				"JPN,iwate",		"dahuy",	"xebiloi"),
+                            ("3",			"3",		"1",	"2840000",	"2021/5/5",		NULL,				"JPN,tochigi",		"dahuy",			NULL);
