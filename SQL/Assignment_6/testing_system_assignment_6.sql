@@ -66,16 +66,24 @@ DELIMITER ;
 -- Question 6: Viết 1 store cho phép người dùng nhập vào 1 chuỗi và trả về group có tên
 -- chứa chuỗi của người dùng nhập vào hoặc trả về user có username chứa
 -- chuỗi của người dùng nhập vào
+DROP PROCEDURE IF EXISTS cau_6_ex_6;
+DELIMITER $$
+CREATE PROCEDURE cau_6_ex_6(IN input VARCHAR(100))
+		BEGIN 
+			SELECT group_name  matched_name, 'group' AS origin
+			FROM `groups` 
+            WHERE	group_name LIKE CONCAT(input, '%')
+			UNION
+            SELECT	username, 'account'
+            FROM	`accounts`
+			WHERE username LIKE CONCAT('%', input, '%');
+		END$$
+DELIMITER ;
 
-
-
-
-
-
+CALL cau_6_ex_6('');
 
 -- Question 7: Viết 1 store cho phép người dùng nhập vào thông tin fullName, email và
--- trong store sẽ tự động gán:
-
+-- trong store sẽ tự động gán
 -- username sẽ giống email nhưng bỏ phần @..mail đi
 -- positionID: sẽ có default là developer
 -- departmentID: sẽ được cho vào 1 phòng chờ
@@ -83,6 +91,30 @@ DELIMITER ;
 -- Sau đó in ra kết quả tạo thành công
 -- Question 8: Viết 1 store cho phép người dùng nhập vào Essay hoặc Multiple-Choice
 -- để thống kê câu hỏi essay hoặc multiple-choice nào có content dài nhất
+
+DROP PROCEDURE IF EXISTS cau_8_ex_6;
+DELIMITER $$
+CREATE PROCEDURE cau_8_ex_6(IN input ENUM("essay","multiple_choice"))
+		BEGIN 
+			DECLARE id INT;
+            DECLARE	max_length_content INT;
+			SELECT type_id INTO id
+			FROM type_questions
+            WHERE	type_name=input;
+            
+			SELECT	length(content)
+            FROM	questions
+            WHERE		;
+            
+            SELECT  t.type_name 
+            FROM 	type_questions t
+            RIGHT JOIN questions q
+            ON	t.type_id=q.type_id;
+		END$$
+DELIMITER ;
+
+
+
 -- Question 9: Viết 1 store cho phép người dùng xóa exam dựa vào ID
 -- Question 10: Tìm ra các exam được tạo từ 3 năm trước và xóa các exam đó đi (sử
 -- dụng store ở câu 9 để xóa)
